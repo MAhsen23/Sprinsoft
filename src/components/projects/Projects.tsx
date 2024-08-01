@@ -12,7 +12,7 @@ const ProjectsSection: React.FC = () => {
                         Here are some of the projects we've worked on.
                     </p>
                 </div>
-                <div className="grid lg:grid-cols-2 gap-8 grid-cols-1 lg:mx-16">
+                <div className="grid lg:grid-cols-2 gap-8 grid-cols-1 md:mx-36">
                     {
                         projects.slice(0, 4).map((project, index) => (
                             <Project

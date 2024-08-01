@@ -42,17 +42,19 @@ const ProjectPage = () => {
                             <h2 className="text-3xl font-semibold text-gray-800 mb-4">Project Overview</h2>
                             <p className="text-gray-600 mb-6">{project.description}</p>
                             <div className="grid grid-cols-2 gap-4 mb-6">
-                                <div>
-                                    <h3 className="text-lg font-medium text-gray-800 mb-2">Client</h3>
-                                    <p className="text-gray-600">Ahsen Khan</p>
-                                </div>
-                                <div>
+                                {project.client &&
+                                    <div>
+                                        <h3 className="text-lg font-medium text-gray-800 mb-2">Client</h3>
+                                        <p className="text-gray-600">{project.client}</p>
+                                    </div>
+                                }
+                                {/* <div>
                                     <h3 className="text-lg font-medium text-gray-800 mb-2">Date</h3>
                                     <p className="text-gray-600">February 2024</p>
-                                </div>
+                                </div> */}
                                 <div>
                                     <h3 className="text-lg font-medium text-gray-800 mb-2">Category</h3>
-                                    <p className="text-gray-600">Mobile Application</p>
+                                    <p className="text-gray-600">{project.category}</p>
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-medium text-gray-800 mb-2">Technology</h3>
@@ -72,8 +74,8 @@ const ProjectPage = () => {
                                 key={index}
                                 src={imageUrl}
                                 alt={`${project.title} - Image ${index + 1}`}
-                                width={5000}
-                                height={5000}
+                                width={2000}
+                                height={2000}
                                 className='w-full shadow-lg rounded-lg'
                                 objectFit="contain"
                             />
