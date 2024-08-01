@@ -7,7 +7,7 @@ import Header from '../header/Header';
 const HeroSection = (props: any) => {
     return (
         <>
-            <div className="h-[600px] relative bg-gradient-to-r from-blue-500 to-blue-50 flex flex-col py-4 lg:px-12">
+            <div className="h-[600px] relative bg-gradient-to-tl from-gray-900 to-gray-700 flex flex-col py-4 lg:px-12">
                 <div className=''>
                     <Header />
                 </div>
@@ -21,7 +21,7 @@ const HeroSection = (props: any) => {
                         </p>
                         <Link href={'/about'}>
                             {props.showButton && (
-                                <button className="px-6 md:px-12 py-3 md:py-4 mt-4 bg-white text-blue-400 font-semibold rounded-xl hover:text-blue-500 transition duration-300">
+                                <button className="px-6 md:px-12 py-3 hover:shadow-lg shadow-md md:py-4 mt-6 bg-orange-400 hover:bg-orange-500 text-white font-semibold rounded-xl hover:text-white transition duration-300">
                                     Learn More
                                 </button>
                             )}
