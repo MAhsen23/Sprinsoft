@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --color-white: "#FFFFFF";
+  --color-primary: #F84C00;
+  --color-secondary: #F8F9FA;
+  --color-accent: #3490dc;
+  --color-complementary: #34d399;
+  --color-neutral: #1a202c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  color: var(--color-neutral);
+  /* background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+.text404 {
+  font-size: 200px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-header {
+  flex-shrink: 0;
+}
+
+.layout-footer {
+  flex-shrink: 0;
+}
+
+.layout-content {
+  flex-grow: 1;
+}
+
+.custom-shape-divider-bottom-1722258337 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1722258337 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+
+.custom-shape-divider-bottom-1722258337 .shape-fill {
+  fill: #FFFFFF;
+}
