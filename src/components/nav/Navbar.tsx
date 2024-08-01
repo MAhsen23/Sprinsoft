@@ -10,7 +10,7 @@ const Navbar = () => {
                 <Link href="/#services" className="hover:text-gray-200">Services</Link>
                 <Link href="/#projects" className={`hover:text-gray-200`}>Projects</Link>
                 <Link href="/#contact" className="hover:text-gray-200">Contact</Link>
-            </nav >
+            </nav>
         </>
     )
 }

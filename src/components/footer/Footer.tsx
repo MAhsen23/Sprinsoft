@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container h-full mx-auto flex flex-col justify-between lg:px-12">
                 <div className='flex flex-col md:flex-row md:justify-between justify-center items-center md:items-start'>
                     <div>
-                        <Image src={'/sprinsoft_white.png'} alt="Sprinsoft Logo" width={120} height={70} />
+                        <Image src={'/sprinsoft_ow.png'} alt="Sprinsoft Logo" width={120} height={70} />
                     </div>
                     <div className='mt-8 md:mt-0'>
                         <div className='text-left space-y-1 md:space-y-5'>
