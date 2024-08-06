@@ -6,14 +6,15 @@ interface ProjectProps {
     title: string;
     description: string;
     imageUrl: string;
+    cover?: boolean;
 }
 
-const Project: React.FC<ProjectProps> = ({ id, title, description, imageUrl }) => {
+const Project: React.FC<ProjectProps> = ({ id, title, description, imageUrl, cover }) => {
     return (
         <Link href={`/projects/${id}`}>
             <div className="bg-white bg-opacity-100 relative h-full border-gray-200 rounded-lg overflow-hidden transition-shadow duration-500 flex flex-col hover:shadow-lg">
                 <div className='relative p-4 w-full h-52'>
-                    <Image src={imageUrl} alt={title} layout="fill" objectFit="contain" className="transition-opacity duration-300 hover:opacity-75 border-b border-b-gray-100" />
+                    <Image src={imageUrl} alt={title} layout="fill" objectFit={cover ? "cover" : "contain"} className="transition-opacity duration-300 hover:opacity-75 border-b border-b-gray-100" />
                 </div>
                 <div className="p-6 flex flex-col">
                     <div>

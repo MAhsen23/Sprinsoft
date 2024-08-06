@@ -52,7 +52,7 @@ const Contact = () => {
                             We'd love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.                        </p>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row md:space-x-8">
+                <div className="flex flex-col md:flex-row justify-center md:space-x-8">
                     <div className="md:w-1/2 p-6">
                         <form onSubmit={handleSubmit}>
                             <div className="mb-4">
@@ -71,14 +71,14 @@ const Contact = () => {
                                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
                                     Message
                                 </label>
-                                <textarea autoComplete='off' value={details.message} onChange={handleChange} required name='message' className="w-full px-3 py-2 border rounded-lg focus:outline-none" id="message" rows={5} placeholder="Your Message"></textarea>
+                                <textarea autoComplete='off' minLength={60} value={details.message} onChange={handleChange} required name='message' className="w-full px-3 py-2 border resize-none rounded-lg focus:outline-none" id="message" rows={5} placeholder="Your Message"></textarea>
                             </div>
                             <button className="w-full bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
                                 Send Message
                             </button>
                         </form>
                     </div>
-                    <div className="md:w-1/2 items-center flex flex-col gap-y-8 lg:flex-row justify-center p-2">
+                    {/* <div className="md:w-1/2 items-center flex flex-col gap-y-8 lg:flex-row justify-center p-2">
                         <div className='w-60 bg-gray-100 bg-opacity-100 relative items-center justify-center flex-col flex h-52 mx-5 rounded-xl'>
                             <a href='https://wa.me/+923055701828?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services.' target='_blank' className='w-full  bg-gray-50 bg-opacity-80 absolute right-4 bottom-4 items-center justify-center flex-col flex h-52 rounded-xl'>
                                 <FaWhatsappSquare className="w-6 h-6 mb-4 text-gray-600" />
@@ -91,7 +91,7 @@ const Contact = () => {
                                 <p className="text-gray-600 text-sm font-medium">sprinsoft@gmail.com</p>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -8,7 +8,7 @@ import Footer from '@/components/footer/Footer';
 const About: React.FC = () => {
     return (
         <>
-            <HeroSection showButton={false} title={"Who We Are"} tilt={true} description={"Our company is dedicated to providing top-notch web development, app development, and desktop application services. Our mission is to help businesses grow by offering innovative and efficient solutions."} imageUrl={"/about_banner_bg.png"} />
+            <HeroSection showButton={false} title={"Who We Are"} tilt={true} description={"Our company is dedicated to providing top-notch web development, app development, and desktop application services. Our mission is to help businesses grow by offering innovative and efficient solutions."} imageUrl={"/about_banner.png"} />
             <Expertise />
             <TeamSection />
             <Footer />

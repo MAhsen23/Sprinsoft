@@ -13,10 +13,10 @@ const Header: React.FC = (props: any) => {
 
     const menuItems = [
         { href: "/", label: "Home" },
-        { href: "/about", label: "About Us" },
         { href: "/#services", label: "Services" },
         { href: "/#projects", label: "Projects" },
-        { href: "/#contact", label: "Contact" },
+        { href: "/about", label: "About us" },
+        { href: "mailto:sprinsoft@gmail.com", label: "Contact" },
     ];
 
     return (
@@ -32,7 +32,7 @@ const Header: React.FC = (props: any) => {
                 </div>
                 <nav className="hidden md:flex space-x-6">
                     {menuItems.map((item) => (
-                        <Link key={item.href} href={item.href} className="hover:text-gray-300 transition duration-300">
+                        <Link key={item.href} href={item.href} className={`${item.label === "Contact" ? "bg-white rounded-full text-gray-800 px-6 text-sm py-[6px]" : "py-[2px] hover:text-gray-300"} transition duration-300`}>
                             {item.label}
                         </Link>
                     ))}
@@ -51,7 +51,7 @@ const Header: React.FC = (props: any) => {
                         </div>
                         <nav className="flex flex-col items-center mt-4 space-y-4">
                             {menuItems.map((item) => (
-                                <Link key={item.href} href={item.href} className="text-white hover:bg-gray-700 py-2 px-4 rounded transition duration-300 w-full text-center" onClick={toggleMenu}>
+                                <Link key={item.href} href={item.href} className={`text-white hover:bg-gray-700 py-2 px-4 rounded transition duration-300 w-full text-center `} onClick={toggleMenu}>
                                     {item.label}
                                 </Link>
                             ))}

@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
-import { FaGithub, } from 'react-icons/fa6';
+import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp, FaWhatsappSquare, FaEnvelopeOpen, FaEnvelopeSquare } from 'react-icons/fa';
+import { FaGithub, FaSquareWhatsapp, } from 'react-icons/fa6';
 const Footer = () => {
     return (
         <footer className="px-4 bg-gray-900 text-white py-8">
@@ -14,11 +15,11 @@ const Footer = () => {
                     <div className='mt-8 md:mt-0'>
                         <div className='text-left space-y-1 md:space-y-5'>
                             <div className="flex flex-row justify-center md:justify-start items-center">
-                                <FaPhoneAlt className="w-4 h-4 mr-2 text-gray-200" />
-                                <a target='_blank' className="text-gray-200 text-sm" href="https://wa.me/+923055701828?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services.">+92 305 5701828</a>
+                                <AiOutlineWhatsApp className="w-5 h-5 mr-2 text-gray-200" />
+                                <a target='_blank' className="text-gray-200 text-sm" href="https://wa.me/+923055701828?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services.">+92 319 7375742</a>
                             </div>
                             <div className="flex flex-row justify-center md:justify-start items-center">
-                                <FaEnvelope className="w-4 h-4 mr-2 text-gray-200" />
+                                <AiOutlineMail className="w-5 h-5 mr-2 text-gray-200" />
                                 <a target='_blank' className="text-gray-200 text-sm" href="mailto:sprinsoft@gmail.com">sprinsoft@gmail.com</a>
                             </div>
                             {/* <div className="flex items-center">

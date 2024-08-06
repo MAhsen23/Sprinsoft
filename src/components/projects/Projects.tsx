@@ -21,6 +21,7 @@ const ProjectsSection: React.FC = () => {
                                 title={project.title}
                                 description={project.description}
                                 imageUrl={project.imageUrl}
+                                cover={project.cover}
                             />
                         ))
                     }
