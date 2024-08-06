@@ -31,7 +31,7 @@ const teamMembers = [
     },
     {
         name: "Muhammad Anees",
-        role: "UI/UX Designer",
+        role: "Flutter Developer",
         imageUrl: "/team/anees.jpg",
         linkedInUrl: "https://www.linkedin.com/in/anees7757/",
         twitterUrl: "",
