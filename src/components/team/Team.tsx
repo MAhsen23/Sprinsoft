@@ -46,7 +46,7 @@ const TeamSection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-orange-400">Meet Our Team</h2>
+                        <h2 className="text-4xl font-bold text-[#FF4E00]">Meet Our Team</h2>
                         <p className="mt-4 text-center text-lg text-gray-600 lg:mx-auto">
                             Our team is composed of highly skilled and experienced professionals dedicated to delivering the best solutions.
                         </p>

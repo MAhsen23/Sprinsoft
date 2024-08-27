@@ -1,31 +1,47 @@
 import React from 'react';
-import { FaLaptopCode, FaMobileAlt, FaDesktop } from 'react-icons/fa';
+import { FaLaptopCode, FaMobileAlt, FaDesktop, FaSearch, FaPalette, FaHeadset } from 'react-icons/fa';
 import Service from './service/Service';
+import { AiOutlineAppstore, AiOutlineCode, AiOutlineCustomerService, AiOutlineDesktop, AiOutlineLaptop, AiOutlineMobile, AiOutlineSearch } from 'react-icons/ai';
 
 const services = [
     {
         title: 'Web Development',
         description: 'Creating responsive and modern websites to help your business stand out online.',
-        Icon: FaLaptopCode
+        Icon: AiOutlineCode
     },
     {
         title: 'App Development',
         description: 'Developing mobile applications that provide seamless user experiences on iOS and Android platforms.',
-        Icon: FaMobileAlt
+        Icon: AiOutlineMobile
     },
     {
         title: 'Desktop Applications',
         description: 'Building powerful desktop applications to enhance your business productivity.',
-        Icon: FaDesktop
+        Icon: AiOutlineDesktop
+    },
+    {
+        title: 'SEO Optimization',
+        description: 'Improving your website’s visibility on search engines to drive more organic traffic.',
+        Icon: AiOutlineSearch
+    },
+    {
+        title: 'UI/UX Design',
+        description: 'Designing intuitive and engaging user interfaces and experiences for websites and applications.',
+        Icon: AiOutlineAppstore
+    },
+    {
+        title: 'Technical Support',
+        description: 'Providing reliable support and troubleshooting to ensure smooth operation of your technology solutions.',
+        Icon: AiOutlineCustomerService
     }
 ];
 
 const ServicesSection: React.FC = () => {
     return (
-        <section id="services" className="pt-10 pb-20">
+        <section id="services" className="pt-10 bg-gray-50 bg-opacity-70 pb-20">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-orange-400">Our Services</h2>
+                    <h2 className="text-4xl font-bold text-[#FF4E00]">Our Services</h2>
                     <p className="mt-4 text-lg text-gray-600">
                         We provide a wide range of services to help your business grow.
                     </p>

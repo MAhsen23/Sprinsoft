@@ -47,7 +47,7 @@ const Contact = () => {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-orange-400">Get in touch</h2>
+                        <h2 className="text-4xl font-bold text-[#FF4E00]">Get in touch</h2>
                         <p className="mt-4 text-center text-lg text-gray-600 lg:mx-auto">
                             We'd love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.                        </p>
                     </div>

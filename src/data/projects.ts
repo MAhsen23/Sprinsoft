@@ -64,6 +64,22 @@ const projects = [
         ],
         cover: false,
     },
+    {
+        id: '1005',
+        title: 'Tranparify',
+        description: 'Remove your backgroud in one click and download the video without watermark',
+        imageUrl: '/projects/thumbnails/1005.png',
+        technologies: ['React Native', 'Python'],
+        links: [
+            { label: 'GitHub', url: '' },
+            { label: 'Live Demo', url: '' }
+        ],
+        category: 'Mobile Application',
+        client: '',
+        projectImagesUrl: ['/projects/1005/1.png', '/projects/1005/2.png', '/projects/1005/3.png',
+        ],
+        cover: false,
+    },
 ];
 
 export default projects;

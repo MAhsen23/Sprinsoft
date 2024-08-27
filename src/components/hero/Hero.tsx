@@ -1,52 +1,39 @@
-// from-blue-500 to-blue-50
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Header from '../header/Header';
+import { FaStar, FaMapMarkerAlt, FaProjectDiagram } from 'react-icons/fa';
+import { BiUser } from 'react-icons/bi';
+import Stat from '../stat/Stat';
 
 const HeroSection = (props: any) => {
     return (
         <>
-            <div className="h-[600px] relative bg-gradient-to-tl from-gray-900 to-gray-700 flex flex-col py-4 lg:px-12">
-                <div className=''>
-                    <Header />
-                </div>
-                <div className="container mx-auto my-4 px-6 py-12 flex flex-col md:flex-row items-center justify-between">
-                    <div className="md:w-1/2 sm:w-full">
-                        <h1 className="text-5xl md:text-5xl font-bold text-white leading-tight mb-4 md:mb-6">
-                            {props.title}
+            <div className="min-h-screen flex flex-col py-4 px-4 md:px-8 lg:px-12">
+                <div className="container md:mt-24 mt-24 mx-auto flex flex-col items-center justify-center">
+                    <div className="w-full max-w-3xl flex flex-col items-center text-center justify-center">
+                        <h1 className="text-gray-900 leading-normal md:leading-none text-4xl text-center md:text-5xl font-semibold mb-4 relative">
+                            Where <span className='text-[#FF4E00] relative'>ideas
+                                <img src="/curvedline.png" alt="ideas" className="absolute -bottom-2 text-gray-950 left-1/2 transform -translate-x-1/2" />
+                            </span> spring to life
                         </h1>
-                        <p className="text-xl text-gray-50 mb-4">
-                            {props.description}
-                        </p>
+                        <h3 className='font-medium text-xl text-center mt-4 md:mt-10 md:leading-relaxed text-gray-800 md:text-2xl'>
+                            Turning your ideas into exciting digital experiences with creativity and precision.</h3>
+                    </div>
+                    <div className='mt-6 md:mt-8'>
                         <Link href={'/about'}>
                             {props.showButton && (
-                                <button className="px-6 md:px-12 py-3 hover:shadow-lg shadow-md md:py-4 mt-6 bg-orange-400 hover:bg-orange-600 text-white font-semibold rounded-xl hover:text-white transition duration-300">
+                                <button className="px-4 md:px-6 py-2.5 md:py-3 text-gray-500 font-normal rounded-full border-2 border-[#FF4E00] hover:text-gray-800 transition duration-300">
                                     Learn More
                                 </button>
                             )}
                         </Link>
                     </div>
-                    <div className="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
-                        {/* <div className="w-0 md:w-80 lg:w-96">
-                            <Image
-                                src={props.imageUrl}
-                                alt="Hero Image"
-                                className="rounded-lg"
-                                width={props.width ? props.width : 500}
-                                height={props.height ? props.height : 500}
-                                layout="responsive"
-                            />
-                        </div> */}
+                    <div className="hidden md:flex text-gray-700 w-full max-w-4xl mx-auto mt-8 md:mt-28 flex-col md:flex-row justify-between items-center rounded-3xl border border-gray-400 p-6 sm:px-8">
+                        <Stat icon={FaStar} label="Ratings" value="4.9" isRating={true} />
+                        <Stat icon={BiUser} label="Clients" value="50" />
+                        <Stat icon={FaMapMarkerAlt} label="Locations" value="10" />
+                        <Stat icon={FaProjectDiagram} label="Projects" value="200" />
                     </div>
                 </div>
-                {props.tilt &&
-                    <div className="custom-shape-divider-bottom-1722258337">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
-                        </svg>
-                    </div>
-                }
             </div>
         </>
     );
