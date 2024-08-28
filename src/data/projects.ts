@@ -1,5 +1,22 @@
 const projects = [
     {
+        id: '1005',
+        title: 'Transparify',
+        description: 'Remove your backgroud in one click and easily download or share your image without any watermark.',
+        imageUrl: '/projects/thumbnails/1005.png',
+        technologies: ['React Native', 'Python'],
+        links: [
+            { label: 'GitHub', url: '' },
+            { label: 'Live Demo', url: '' }
+        ],
+        category: 'Mobile Application',
+        client: '',
+        projectImagesUrl: ['/projects/1005/1.png', '/projects/1005/2.png', '/projects/1005/3.png', '/projects/1005/4.png', '/projects/1005/5.png', '/projects/1005/6.png'
+        ],
+        cover: false,
+        fullView: false,
+    },
+    {
         id: '1001',
         title: 'Track Visitors',
         description: 'Track Visitors is a sophisticated mobile application developed using React Native, integrated with SQL Server and Python (Flask) for real-time visitor tracking. This app leverages camera systems to enhance organizational security and monitoring capabilities, providing a seamless solution for managing and tracking visitors within an organization.',
@@ -66,23 +83,6 @@ const projects = [
         ],
         cover: false,
         fullView: true,
-    },
-    {
-        id: '1005',
-        title: 'Transparify',
-        description: 'Remove your backgroud in one click and easily download or share your image without any watermark.',
-        imageUrl: '/projects/thumbnails/1005.png',
-        technologies: ['React Native', 'Python'],
-        links: [
-            { label: 'GitHub', url: '' },
-            { label: 'Live Demo', url: '' }
-        ],
-        category: 'Mobile Application',
-        client: '',
-        projectImagesUrl: ['/projects/1005/1.png', '/projects/1005/2.png', '/projects/1005/3.png', '/projects/1005/4.png', '/projects/1005/5.png', '/projects/1005/6.png'
-        ],
-        cover: false,
-        fullView: false,
     },
 ];
 
