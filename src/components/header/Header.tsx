@@ -12,19 +12,21 @@ const Header = () => {
 
     return (
         <header className="relative pt-4">
-            <div className="max-w-6xl md:shadow-sm rounded-lg mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl custom-shadow rounded-lg mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
                         <Link href="/">
-                            <Image src="/sprinsoft.png" alt="Logo" width={120} height={40} />
+                            <div className='relative w-24 md:w-32 h-8'>
+                                <Image src="/sprinsoft.png" alt="Sprinsoft" layout='fill' objectFit='contain' />
+                            </div>
                         </Link>
                     </div>
 
                     <nav className="hidden md:flex space-x-6">
-                        <Link href="/#services" className="text-gray-700 hover:text-gray-900">Services</Link>
-                        <Link href="/#projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
-                        <Link href="/#testimonials" className="text-gray-700 hover:text-gray-900">Testimonials</Link>
-                        <Link href="/about" className="text-gray-700 hover:text-gray-900">About Us</Link>
+                        <Link href="/#services" className="text-gray-800 hover:text-gray-500">Services</Link>
+                        <Link href="/#projects" className="text-gray-800 hover:text-gray-500">Projects</Link>
+                        <Link href="/#testimonials" className="text-gray-800 hover:text-gray-500">Testimonials</Link>
+                        <Link href="/about" className="text-gray-800 hover:text-gray-500">About Us</Link>
                     </nav>
 
                     <div className="hidden md:block">

@@ -20,7 +20,6 @@ const ProjectsSection: React.FC = () => {
                                          ${index % 5 === 4 ? 'lg:mr-[16.666%]' : ''}
                                          ${index % 5 === 2 ? 'lg:mt-16' : ''}`}>
                             <Project
-                                variant={3}
                                 id={project.id}
                                 title={project.title}
                                 description={project.description}

@@ -8,7 +8,7 @@ import Testimonial from '@/components/testimonial/Testimonial';
 const Home: React.FC = () => {
   return (
     <>
-      <HeroSection title={"Welcome to Sprinsoft"} showButton={true} description={"Where ideas spring to life"} tilt={true} imageUrl={'/hero_banner_2.png'} />
+      <HeroSection page={'home'} showButton={true} description={"Turning your ideas into exciting digital experiences with creativity and precision."} />
       <ServicesSection />
       <ProjectsSection />
       <Testimonial />

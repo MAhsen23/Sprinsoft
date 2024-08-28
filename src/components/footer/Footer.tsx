@@ -22,30 +22,31 @@ const Footer = () => {
                                 <AiOutlineMail className="w-5 h-5 mr-2 text-gray-200" />
                                 <a target='_blank' className="text-gray-200 text-sm" href="mailto:sprinsoft@gmail.com">sprinsoft@gmail.com</a>
                             </div>
-                            {/* <div className="flex items-center">
-                                <FaMapMarkerAlt className="w-4 h-4 mr-2 text-gray-200" />
-                                <div>
-                                    <p className="text-gray-200 text-sm">M 18-B, Mid City Mall,</p>
-                                    <p className="text-gray-200 text-sm">Rehmanabad, Rawalpindi</p>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
-                <div className='mt-10'>
-                    <div className="flex space-x-4 justify-center md:justify-start pb-4">
-                        <a href='https://www.linkedin.com/company/sprinsoft' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-                            <FaLinkedin className="w-6 h-6" />
-                        </a>
-                        <a href='https://www.instagram.com/sprinsoftofficial' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-                            <FaInstagram className="w-6 h-6" />
-                        </a>
-                        <a href='https://www.facebook.com/share/GH5tz2sahwy8P9dy/?mibextid=qi2Omg' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-                            <FaFacebook className="w-6 h-6" />
-                        </a>
-                        <a href='https://www.github.com/sprinsoft' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-                            <FaGithub className="w-6 h-6" />
-                        </a>
+                <div className='mt-5 md:mt-10'>
+                    <div className="flex flex-col-reverse items-center md:flex-row justify-between">
+                        <div className='flex space-x-4 mt-8 md:mt-0 justify-center md:justify-start pb-4'>
+                            <a href='https://www.linkedin.com/company/sprinsoft' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                                <FaLinkedin className="w-6 h-6" />
+                            </a>
+                            <a href='https://www.instagram.com/sprinsoftofficial' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                                <FaInstagram className="w-6 h-6" />
+                            </a>
+                            <a href='https://www.facebook.com/share/GH5tz2sahwy8P9dy/?mibextid=qi2Omg' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                                <FaFacebook className="w-6 h-6" />
+                            </a>
+                            <a href='https://www.github.com/sprinsoft' target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                                <FaGithub className="w-6 h-6" />
+                            </a>
+                        </div>
+                        <div className="flex items-center">
+                            {/* <FaMapMarkerAlt className="w-4 h-4 mr-2 text-gray-200" /> */}
+                            <div>
+                                <p className="text-gray-200 text-sm">M 18-B, Mid City Mall, Rehmanabad, Rawalpindi</p>
+                            </div>
+                        </div>
                     </div>
                     <div className='border-t pt-4 flex flex-col-reverse md:flex-row justify-between border-gray-500'>
                         <p className="text-sm my-1 text-center text-gray-300">&copy; 2024 Sprinsoft. All rights reserved.</p>

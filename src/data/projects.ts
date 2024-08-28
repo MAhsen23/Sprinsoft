@@ -1,4 +1,3 @@
-// data/projects.ts
 const projects = [
     {
         id: '1001',
@@ -15,12 +14,13 @@ const projects = [
         projectImagesUrl: ['/projects/1001/3.png', '/projects/1001/4.png', '/projects/1001/5.png', '/projects/1001/6.png', '/projects/1001/7.png', '/projects/1001/5.png', '/projects/1001/8.png', '/projects/1001/9.png', '/projects/1001/10.png', '/projects/1001/11.png', '/projects/1001/12.png', '/projects/1001/13.png', '/projects/1001/14.png', '/projects/1001/15.png', '/projects/1001/16.png',
         ],
         cover: false,
+        fullView: true,
     },
     {
         id: '1002',
         title: 'Pharma Track',
         description: 'PharmaTrack is an innovative and comprehensive solution designed to streamline and enhance the tracking, management, and distribution of pharmaceutical products. Our system aims to ensure the integrity, safety, and efficiency of the pharmaceutical supply chain, from manufacturers to end consumers.',
-        imageUrl: '/projects/thumbnails/1002.png',
+        imageUrl: '/projects/1002/2.png',
         technologies: ['Flutter',],
         links: [
             { label: 'GitHub', url: '' },
@@ -31,6 +31,7 @@ const projects = [
         projectImagesUrl: ['/projects/1002/2.png', '/projects/1002/3.png', '/projects/1002/4.png',
         ],
         cover: false,
+        fullView: true,
     },
     {
         id: '1003',
@@ -47,12 +48,13 @@ const projects = [
         projectImagesUrl: ['/projects/1003/1.png', '/projects/1003/2.png', '/projects/1003/3.png', '/projects/1003/4.png'
         ],
         cover: true,
+        fullView: true,
     },
     {
         id: '1004',
         title: 'Falah',
         description: 'Falah Connect is your spiritual companion, guiding you through daily prayers and supplications. Experience seamless access to essential Islamic resources, helping you stay connected with your faith.',
-        imageUrl: '/projects/thumbnails/1004.png',
+        imageUrl: '/projects/1004/2.png',
         technologies: ['Flutter', "SQLite",],
         links: [
             { label: 'GitHub', url: '' },
@@ -63,11 +65,12 @@ const projects = [
         projectImagesUrl: ['/projects/1004/1.png', '/projects/1004/2.png', '/projects/1004/3.png', '/projects/1004/4.png'
         ],
         cover: false,
+        fullView: true,
     },
     {
         id: '1005',
-        title: 'Tranparify',
-        description: 'Remove your backgroud in one click and download the video without watermark',
+        title: 'Transparify',
+        description: 'Remove your backgroud in one click and easily download or share your image without any watermark.',
         imageUrl: '/projects/thumbnails/1005.png',
         technologies: ['React Native', 'Python'],
         links: [
@@ -76,9 +79,10 @@ const projects = [
         ],
         category: 'Mobile Application',
         client: '',
-        projectImagesUrl: ['/projects/1005/1.png', '/projects/1005/2.png', '/projects/1005/3.png',
+        projectImagesUrl: ['/projects/1005/1.png', '/projects/1005/2.png', '/projects/1005/3.png', '/projects/1005/4.png', '/projects/1005/5.png', '/projects/1005/6.png'
         ],
         cover: false,
+        fullView: false,
     },
 ];
 

@@ -78,20 +78,6 @@ const Contact = () => {
                             </button>
                         </form>
                     </div>
-                    {/* <div className="md:w-1/2 items-center flex flex-col gap-y-8 lg:flex-row justify-center p-2">
-                        <div className='w-60 bg-gray-100 bg-opacity-100 relative items-center justify-center flex-col flex h-52 mx-5 rounded-xl'>
-                            <a href='https://wa.me/+923055701828?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services.' target='_blank' className='w-full  bg-gray-50 bg-opacity-80 absolute right-4 bottom-4 items-center justify-center flex-col flex h-52 rounded-xl'>
-                                <FaWhatsappSquare className="w-6 h-6 mb-4 text-gray-600" />
-                                <p className="text-gray-600 text-sm font-medium">+92 305 5701828</p>
-                            </a>
-                        </div>
-                        <div className='w-60 bg-gray-100 bg-opacity-100 relative items-center justify-center flex-col flex h-52 mx-5 rounded-xl'>
-                            <a href='mailto:sprinsoft@gmail.com' target='_blank' className='w-full  bg-gray-50 bg-opacity-80 absolute right-4 bottom-4 items-center justify-center flex-col flex h-52 rounded-xl'>
-                                <FaEnvelope className="w-6 h-6 mb-4 text-gray-600" />
-                                <p className="text-gray-600 text-sm font-medium">sprinsoft@gmail.com</p>
-                            </a>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </section>
