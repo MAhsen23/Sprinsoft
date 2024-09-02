@@ -1,5 +1,4 @@
 import mongoose from "mongoose"
-
 const MONGODB_URL = process.env.MONGO_DB_KEY;
 
 if (!MONGODB_URL) {
@@ -10,7 +9,6 @@ if (!MONGODB_URL) {
 
 
 let cached = global.mongoose;
-
 if (!cached) {
     cached = global.mongoose = { con: null, promise: null }
 }
@@ -19,15 +17,11 @@ const dbConnect = async () => {
     if (cached.conn) {
         return cached.conn;
     }
-
-
-    // If a connection does not exist, we check if a promise is already in progress. If a promise is already in progress, we wait for it to resolve to get the connection
     if (!cached.promise) {
         const opts = {
             bufferCommands: false
         };
-
-        cached.promise = mongoose.connect(MONGODB_URL, opts).then((mongoose) => {
+        cached.promise = mongoose.connect('mongodb://127.0.0.1:27017/contactdetails', opts).then((mongoose) => {
             return mongoose
         })
     }
@@ -38,7 +32,6 @@ const dbConnect = async () => {
         cached.promise = null;
         throw e;
     }
-
     return cached.conn;
 }
 

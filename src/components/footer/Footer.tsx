@@ -42,9 +42,8 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="flex items-center">
-                            {/* <FaMapMarkerAlt className="w-4 h-4 mr-2 text-gray-200" /> */}
                             <div>
-                                <p className="text-gray-200 text-sm">M 18-B, Mid City Mall, Rehmanabad, Rawalpindi</p>
+                                <p className="text-gray-200 text-sm">Mid City Mall, Rehmanabad, Rawalpindi</p>
                             </div>
                         </div>
                     </div>

@@ -71,7 +71,7 @@ const Contact = () => {
                                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
                                     Message
                                 </label>
-                                <textarea autoComplete='off' minLength={60} value={details.message} onChange={handleChange} required name='message' className="w-full px-3 py-2 border resize-none rounded-lg focus:outline-none" id="message" rows={5} placeholder="Your Message"></textarea>
+                                <textarea autoComplete='off' value={details.message} onChange={handleChange} required name='message' className="w-full px-3 py-2 border resize-none rounded-lg focus:outline-none" id="message" rows={5} placeholder="Your Message"></textarea>
                             </div>
                             <button className="w-full bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
                                 Send Message
