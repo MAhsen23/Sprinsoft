@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-const MONGODB_URL = process.env.MONGO_DB_KEY;
+const MONGODB_URL = "mongodb://127.0.0.1:27017/contactdetails";
 
 if (!MONGODB_URL) {
     throw new Error(
@@ -21,7 +21,7 @@ const dbConnect = async () => {
         const opts = {
             bufferCommands: false
         };
-        cached.promise = mongoose.connect('mongodb://127.0.0.1:27017/contactdetails', opts).then((mongoose) => {
+        cached.promise = mongoose.connect(MONGODB_URL, opts).then((mongoose) => {
             return mongoose
         })
     }
