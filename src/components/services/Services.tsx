@@ -38,8 +38,8 @@ const services = [
 
 const ServicesSection: React.FC = () => {
     return (
-        <section id="services" className="pt-10 bg-gray-50 bg-opacity-70 pb-20">
-            <div className="container mx-auto px-6">
+        <section id="services" className="py-20 bg-gradient-to-t from-gray-50 to-white bg-opacity-100">
+            <div className="container mx-auto max-w-7xl px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-[#FF4E00]">Our Services</h2>
                     <p className="mt-4 text-lg text-gray-600">

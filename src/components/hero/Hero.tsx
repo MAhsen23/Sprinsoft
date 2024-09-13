@@ -8,8 +8,8 @@ import Expertise from '../expertise/Expertise';
 const HeroSection = (props: any) => {
     return (
         <>
-            <div className="min-h-screen flex flex-col py-4 px-4 md:px-8 lg:px-12">
-                <div className="container md:mt-24 mt-24 mx-auto flex flex-col items-center justify-center">
+            <div className="flex flex-col py-20">
+                <div className="container mx-auto max-w-7xl px-6 flex flex-col items-center justify-center">
                     <div className="w-full max-w-3xl flex flex-col items-center text-center justify-center">
                         {
                             props.title ? (

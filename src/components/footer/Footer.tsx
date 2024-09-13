@@ -6,8 +6,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaMapMarkerAlt, FaEnve
 import { FaGithub, FaSquareWhatsapp, } from 'react-icons/fa6';
 const Footer = () => {
     return (
-        <footer className="px-4 bg-gray-900 text-white py-8">
-            <div className="container h-full mx-auto flex flex-col justify-between lg:px-12">
+        <footer className="px-6 bg-gray-900 text-white py-8">
+            <div className="container max-w-7xl h-full mx-auto flex flex-col justify-between">
                 <div className='flex flex-col md:flex-row md:justify-between justify-center items-center md:items-start'>
                     <div>
                         <Image src={'/sprinsoft_ow.png'} alt="Sprinsoft Logo" width={120} height={70} />
