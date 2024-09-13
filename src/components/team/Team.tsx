@@ -22,7 +22,7 @@ const teamMembers = [
     },
     {
         name: "Abdullah Mustafa",
-        role: "Python Developer",
+        role: "Android Developer",
         imageUrl: "/team/abdullah.jpg",
         linkedInUrl: "https://www.linkedin.com/in/abdullah-mustafa-65537b1b4/",
         twitterUrl: "",
@@ -42,8 +42,8 @@ const teamMembers = [
 
 const TeamSection = () => {
     return (
-        <section className="py-20 bg-gray-100">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
+        <section className="py-20 bg-gradient-to-b from-white to bg-gray-100 ">
+            <div className="max-w-7xl mx-auto px-6">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold text-[#FF4E00]">Meet Our Team</h2>
