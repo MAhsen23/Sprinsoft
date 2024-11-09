@@ -38,6 +38,15 @@ const teamMembers = [
         instagramUrl: "",
         githubUrl: "https://github.com/anees7757",
     },
+    {
+        name: "Zia Imdad",
+        role: "Full Stack Web Developer",
+        imageUrl: "/team/zia.jpg",
+        linkedInUrl: "https://www.linkedin.com/in/zia-imdad-096b86279",
+        twitterUrl: "",
+        instagramUrl: "",
+        githubUrl: "",
+    },
 ];
 
 const TeamSection = () => {
